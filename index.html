@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>用語集</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Analytics: replace only the ID below with your G-... measurement ID. -->
+    <script>
+      const GA_MEASUREMENT_ID = "G-103RJCQ757";
+      if (/^G-[A-Z0-9]+$/.test(GA_MEASUREMENT_ID) && GA_MEASUREMENT_ID !== "G-XXXXXXXXXX") {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function(){ window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', GA_MEASUREMENT_ID);
+        const gaScript = document.createElement('script');
+        gaScript.async = true;
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA_MEASUREMENT_ID);
+        document.head.appendChild(gaScript);
+      }
+    </script>
+
 </head>
 
 <body>
