@@ -251,6 +251,14 @@ function renderWordPage(wordId) {
 
     document.title = `${currentWord.name}｜用語集`;
 
+    // One event per successfully displayed dictionary entry.
+    if (typeof window.gtag === "function") {
+        window.gtag("event", "word_view", {
+            word_id: currentWord.id,
+            word_name: currentWord.name
+        });
+    }
+
     const linkedDescription = createAutomaticLinks(
         currentWord.description,
         currentWord.id
